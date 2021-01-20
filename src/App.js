@@ -4,6 +4,7 @@ import { Router } from "@reach/router";
 import PrimaryMenubar from './PrimaryMenubar';
 import SecondaryMenubar from './SecondaryMenubar';
 import "./variables.css"
+import MainContent from './MainContent';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
     
     // </Router>
     <>
-    <LoadingPage/>
-  <PrimaryMenubar/>
   <SecondaryMenubar/>
+    {/* <LoadingPage/> */}
+  <PrimaryMenubar/>
+  <MainContent/>
   </>
   );
 }

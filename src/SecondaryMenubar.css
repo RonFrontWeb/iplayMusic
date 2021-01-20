@@ -1,4 +1,6 @@
 .SecondaryMenubar {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,6 +8,7 @@
     padding: 10px 20px;
     box-sizing: border-box;
     background-color: transparent;
+    height: 75px;
 }
 
 .SecondaryMenubarTitle {
