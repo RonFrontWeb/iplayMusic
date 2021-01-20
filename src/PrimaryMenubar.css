@@ -1,6 +1,10 @@
-.LoadingPage {
-    height: 100vh;
+.SecondaryMenubar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    box-shadow: 0px 1px 25px 10px #ccc;
 }

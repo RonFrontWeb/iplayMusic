@@ -1,4 +1,7 @@
 :root {
     --primaryColor: hsl(0, 50%, 50%);
     --secondaryColor: hsl(180, 50%, 50%);
+    --gradientFrom: #EE0979;
+    --gradientTo: #FF6A00;
+    --white: #FFFFF;
 }
