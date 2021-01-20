@@ -3,7 +3,7 @@ import './LoadingPage.css';
 function LoadingPage() {
  return (
     <div className="LoadingPage">
-       <a href="#"> <img src="/loadingLogo.svg" alt=""/></a>
+        <img src="/loadingLogo.svg" alt=""/>
     </div>
   );
 }
