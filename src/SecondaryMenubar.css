@@ -1,0 +1,15 @@
+.SecondaryMenubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.SecondaryMenubarTitle {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1em;
+}
