@@ -1,8 +1,9 @@
 :root {
-    --primaryColor: hsl(0, 50%, 50%);
-    --secondaryColor: hsl(180, 50%, 50%);
+    --primaryColor: #bf4040;
+    --secondaryColor: #40bfbf;
     --gradientFrom: #EE0979;
     --gradientTo: #FF6A00;
-    --white: #FFFFF;
+    --white: #FFFFFF;
     --darkPurple: #341931;
+    --pink: #FF1168;
 }

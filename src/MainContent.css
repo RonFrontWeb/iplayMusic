@@ -2,6 +2,14 @@
     /* background-color: gray; */
     width: 100%;
     margin-top: 75px;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+}
+
+.MainContentGridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em;
 }
 
 .MainContentTitle {

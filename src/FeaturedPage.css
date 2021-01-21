@@ -1,0 +1,42 @@
+.FeaturedPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.FeaturedImageContainer {
+    position: relative;
+}
+
+.FeaturedPageOverlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.FeaturedImage {
+    display: block;
+    width: 100%;
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.201);
+    ;
+}
+
+.FeaturedImageTilte {
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    color: var(--white);
+}
+
+.FeaturedImageText {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    color: var(--white);
+}

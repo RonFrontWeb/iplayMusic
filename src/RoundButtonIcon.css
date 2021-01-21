@@ -1,0 +1,22 @@
+.RoundButtonIconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.RoundButtonIcon {
+    background-color: var(--pink);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.RoundButtonIconSkip {
+    font-weight: 100;
+    font-size: 1em;
+    padding: 15px;
+}

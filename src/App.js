@@ -6,6 +6,8 @@ import SecondaryMenubar from './SecondaryMenubar';
 import "./variables.css"
 import MainContent from './MainContent';
 import WalkMenu from './WalkMenu';
+import RoundButtonIcon from './RoundButtonIcon';
+import FeaturedPage from './FeaturedPage';
 
 function App() {
   return (
@@ -13,11 +15,18 @@ function App() {
     
     // </Router>
     <>
-  {/* <SecondaryMenubar/> */}
     {/* <LoadingPage/> */}
-  {/* <PrimaryMenubar/> */}
-  {/* <MainContent/> */}
-  <WalkMenu/>
+  <MainContent>
+    <FeaturedPage/>
+    <FeaturedPage/>
+    <FeaturedPage/>
+    <FeaturedPage/>
+    <FeaturedPage/>
+  </MainContent>
+  <SecondaryMenubar/>
+  <PrimaryMenubar/>
+  {/* <WalkMenu/> */}
+  {/* <RoundButtonIcon/> */}
   </>
   );
 }
