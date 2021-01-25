@@ -1,0 +1,28 @@
+.PlayListElement {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.PlayListElementImage {
+    padding-right: 20px;
+}
+
+.PlayListElementTitle {
+    margin: 0;
+}
+
+.PlayListElementText {
+    margin: 0;
+}
+
+.PlayListElementTitleandTextContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

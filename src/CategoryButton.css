@@ -1,0 +1,77 @@
+.CategoryButton:nth-of-type(9n+1) .CategoryButtonContainer {
+    background-color: var(--pinkAlt);
+}
+
+.CategoryButton:nth-of-type(9n+2) .CategoryButtonContainer {
+    background-color: var(--orange);
+}
+
+.CategoryButton:nth-of-type(9n+3) .CategoryButtonContainer {
+    background-color: var(--light-orange);
+}
+
+.CategoryButton:nth-of-type(9n+4) .CategoryButtonContainer {
+    background-color: var(--yellow);
+}
+
+.CategoryButton:nth-of-type(9n+5) .CategoryButtonContainer {
+    background-color: var(--green);
+}
+
+.CategoryButton:nth-of-type(9n+6) .CategoryButtonContainer {
+    background-color: var(--darkgreen);
+}
+
+.CategoryButton:nth-of-type(9n+7) .CategoryButtonContainer {
+    background-color: var(--turquoise-blue);
+}
+
+.CategoryButton:nth-of-type(9n+8) .CategoryButtonContainer {
+    background-color: var(--lightblue);
+}
+
+.CategoryButton:nth-of-type(9n+9) .CategoryButtonContainer {
+    background-color: var(--blue);
+}
+
+.CategoryButtonContainer {
+    list-style: none;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    color: var(--white);
+    padding: 0 30px;
+}
+
+.CategoryButtonContainer::-webkit-details-marker {
+    display: none;
+}
+
+.CategoryButtonMore {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    color: var(--white);
+}
+
+.CategoryButtonSubmenu {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    padding: 0 45px;
+}
+
+.CategoryButtonSubmenuTitle {
+    font-weight: 100;
+    ;
+}
+
+.CategoryButtonArrow {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+}
