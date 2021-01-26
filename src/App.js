@@ -14,12 +14,16 @@ import PlayListPage from './PlayListPage';
 import Playlist from './pages/Playlist';
 import Featured from './pages/Featured';
 import Category from './pages/Category';
+import PlayerElement from './PlayerElement';
 
 
 function App() {
   return (
     <>
-  
+    <MainContent>
+    <PlayerElement/>
+
+    </MainContent>
     <Router>
     <Playlist path="/playlists"/>
     <Featured path="/featured"/>
