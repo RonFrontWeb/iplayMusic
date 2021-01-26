@@ -1,10 +1,10 @@
 .PlayListElement {
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 15px;
 }
 
 .PlayListElementImage {
@@ -25,4 +25,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.PlayListPageListenAll {
+    margin-top: 20px;
+    border: var(--pink) 2px solid;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.PlayListPageListenAllText {
+    color: var(--pink);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
 }

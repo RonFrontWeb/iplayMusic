@@ -10,14 +10,34 @@ import RoundButtonIcon from './RoundButtonIcon';
 import FeaturedPage from './FeaturedPage';
 import CategoryButton from './CategoryButton';
 import PlayListElement from './PlayListElement';
+import PlayListPage from './PlayListPage';
+import Playlist from './pages/Playlist';
+import Featured from './pages/Featured';
+import Category from './pages/Category';
+
 
 function App() {
   return (
-    // <Router>
-    
-    // </Router>
     <>
-    <PlayListElement/>
+  
+    <Router>
+    <Playlist path="/playlists"/>
+    <Featured path="/featured"/>
+    <Category path="/category"/>
+    </Router>
+      <SecondaryMenubar/>
+      <PrimaryMenubar/>
+
+    {/* <PlayListPage>
+      <PlayListElement></PlayListElement>
+      <PlayListElement></PlayListElement>
+      <PlayListElement></PlayListElement>
+      <PlayListElement></PlayListElement>
+      <PlayListElement></PlayListElement>
+      <PlayListElement></PlayListElement>
+      <PlayListElement></PlayListElement>
+    </PlayListPage> */}
+    {/* <PlayListElement/> */}
     {/* <LoadingPage/>
   <MainContent title="Featured">
     <FeaturedPage/>
