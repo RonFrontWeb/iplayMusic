@@ -1,75 +1,44 @@
 import './App.css';
-import LoadingPage from './LoadingPage';
 import { Router } from "@reach/router";
-import PrimaryMenubar from './PrimaryMenubar';
-import SecondaryMenubar from './SecondaryMenubar';
 import "./variables.css"
-import MainContent from './MainContent';
-import WalkMenu from './WalkMenu';
-import RoundButtonIcon from './RoundButtonIcon';
-import FeaturedPage from './FeaturedPage';
-import CategoryButton from './CategoryButton';
-import PlayListElement from './PlayListElement';
-import PlayListPage from './PlayListPage';
 import Playlist from './pages/Playlist';
 import Featured from './pages/Featured';
 import Category from './pages/Category';
-import PlayerElement from './PlayerElement';
+import PlayerPage from './PlayerPage';
+import Album from './pages/Album';
+import TokenContext from './TokenContext';
+import { useState } from 'react';
+import Login from './pages/Login';
+import Callback from './pages/Callback';
 
 
 function App() {
+
+  var tokenState = useState(null);
+
+
   return (
-    <>
-    <MainContent>
-    <PlayerElement/>
+    <TokenContext.Provider value={tokenState}>
+      <Router>
+        <Login default/>
+        <Callback path="/callback" />
+        {(function () { 
 
-    </MainContent>
-    <Router>
-    <Playlist path="/playlists"/>
-    <Featured path="/featured"/>
-    <Category path="/category"/>
-    </Router>
-      <SecondaryMenubar/>
-      <PrimaryMenubar/>
-
-    {/* <PlayListPage>
-      <PlayListElement></PlayListElement>
-      <PlayListElement></PlayListElement>
-      <PlayListElement></PlayListElement>
-      <PlayListElement></PlayListElement>
-      <PlayListElement></PlayListElement>
-      <PlayListElement></PlayListElement>
-      <PlayListElement></PlayListElement>
-    </PlayListPage> */}
-    {/* <PlayListElement/> */}
-    {/* <LoadingPage/>
-  <MainContent title="Featured">
-    <FeaturedPage/>
-    <FeaturedPage/>
-    <FeaturedPage/>
-    <FeaturedPage/>
-    <FeaturedPage/>
-  </MainContent>
-  <SecondaryMenubar/>
-  <PrimaryMenubar/>
-
-  <MainContent title="Categories">
-    <CategoryButton title="Alternative" text="PROP"/>
-    <CategoryButton title="Blues"/>
-    <CategoryButton title="Classical"/>
-    <CategoryButton title="Country"/>
-    <CategoryButton title="Dance"/>
-    <CategoryButton title="Electronic"/>
-    <CategoryButton title="Fitness &amp; workout"/>
-    <CategoryButton title="Hip-Hop / Rap"/>
-    <CategoryButton title="Industrail"/>
-    
-  </MainContent>
-  <SecondaryMenubar/>
-  <PrimaryMenubar/>
-  <WalkMenu/>
-  <RoundButtonIcon/> */}
-  </>
+          if(tokenState[0]?.access_token) {
+            return (
+              <>
+                <PlayerPage path="/player/:id"/>
+                <Featured path="/featured"/>
+                <Category path="/category"/>
+                <Playlist path="/playlists"/>
+                <Playlist path="/playlists/:id"/>
+                <Album path="/Album"/>
+              </>
+            )           
+          }
+        }())}
+      </Router>
+  </TokenContext.Provider>
   );
 }
 

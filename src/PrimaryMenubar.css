@@ -15,7 +15,8 @@
     background-image: linear-gradient(var(--gradientFrom), var(--gradientTo));
     display: flex;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    padding: 10px;
 }

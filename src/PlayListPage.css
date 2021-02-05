@@ -1,9 +1,15 @@
 .PlayListPage {
-    background-image: url(./img/sound-wave.svg);
-    background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* background-image: url(./img/sound-wave.svg);
+    background-repeat: no-repeat; */
+    padding-bottom: 30px;
     overflow: hidden;
+}
+
+.PlayListBGImage {
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    position: absolute;
 }
 
 .PlayListPageImageTextContainer {

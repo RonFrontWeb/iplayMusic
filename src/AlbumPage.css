@@ -1,0 +1,54 @@
+.AlbumPage {
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.AlbumPageImageTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AlbumPageTitleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AlbumPageImage {
+    height: 100px;
+    width: 100px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.AlbumPageLink {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+.AlbumPageImage1 {
+    height: 100px;
+    width: 100px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.AlbumPageImage2 {
+    height: 100px;
+    width: 100px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.AlbumPagecarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.AlbumPageTitle {
+    margin: 0%;
+}
