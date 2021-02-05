@@ -2,6 +2,15 @@
     /* background-color: gray; */
     width: 100%;
     margin-top: 75px;
+    margin-bottom: 85px;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+}
+
+.MainContentGridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em;
 }
 
 .MainContentTitle {
@@ -15,4 +24,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.white {
+    color: var(--white);
 }

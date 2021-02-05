@@ -1,0 +1,54 @@
+.PlayListElement {
+    display: grid;
+    grid-template-columns: 60px 1fr 50px;
+    gap: 20px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: var(--darkPurple);
+}
+
+.PlayListElementImage {
+    width: 100%;
+    border-radius: 20%;
+}
+
+.PlayListElementImageSmall {
+    width: 60%;
+    border-radius: 20%;
+}
+
+.PlayListElementTitle {
+    margin: 0;
+}
+
+.PlayListElementText {
+    margin: 0;
+}
+
+.PlayListElementTitleandTextContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.PlayListPageListenAll {
+    margin-top: 20px;
+    border: var(--pink) 2px solid;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.PlayListPageListenAllText {
+    color: var(--pink);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.PlayListElementOuterText {
+    text-align: right;
+}

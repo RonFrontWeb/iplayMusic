@@ -1,7 +1,20 @@
 :root {
-    --primaryColor: hsl(0, 50%, 50%);
-    --secondaryColor: hsl(180, 50%, 50%);
+    --primaryColor: #bf4040;
+    --secondaryColor: #40bfbf;
     --gradientFrom: #EE0979;
     --gradientTo: #FF6A00;
-    --white: #FFFFF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --darkPurple: #341931;
+    --pink: #FF1168;
+    --pinkAlt: #D70060;
+    --pinkOpa: #ff11688e;
+    --orange: #E54028;
+    --light-orange: #F18D05;
+    --yellow: #F2BC06;
+    --green: #5EB11C;
+    --darkgreen: #3A7634;
+    --turquoise-blue: #0ABEBE;
+    --lightblue: #00A1CB;
+    --blue: #115793;
 }

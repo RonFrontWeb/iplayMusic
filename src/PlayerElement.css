@@ -1,0 +1,47 @@
+.PlayerElementLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: black; */
+    width: 100%;
+}
+
+.PlayerElementRange {
+    width: 100%;
+    appearance: none;
+    background: var(--pink);
+    height: 5px;
+    outline: none;
+}
+
+.PlayerElementRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--pink);
+    cursor: pointer;
+    border: 7px solid var(--pinkOpa);
+    background-clip: padding-box;
+}
+
+.PlayerElementRange::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--pink);
+    cursor: pointer;
+    border: 6px solid var(--pinkOpa);
+    background-clip: padding-box;
+}
+
+.PlayerElementTimeContainer {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PlayerElementTime {
+    margin: 0;
+}

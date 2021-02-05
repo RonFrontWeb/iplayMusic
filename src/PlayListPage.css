@@ -1,0 +1,47 @@
+.PlayListPage {
+    /* background-image: url(./img/sound-wave.svg);
+    background-repeat: no-repeat; */
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.PlayListBGImage {
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.PlayListPageImageTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PlayListPageImage {
+    height: 150px;
+    width: 150px;
+    padding: 0 10px;
+}
+
+.PlayListPageImage1 {
+    height: 100px;
+    width: 100px;
+    padding: 0 10px;
+}
+
+.PlayListPageImage2 {
+    height: 100px;
+    width: 100px;
+    padding: 0 10px;
+}
+
+.PlayListPagecarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlayListPageTitle {
+    margin: 0%;
+}
