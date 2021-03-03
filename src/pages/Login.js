@@ -6,7 +6,8 @@ export default function Login() {
 		response_type: "code",
 		client_id: "adf9aca1dc9a4e9fa4ed22ebcff99768",
 		scope: "user-read-private user-read-email",
-		redirect_uri: "http://localhost:8888/callback",
+		redirect_uri: "https://iplaymusic-ronfront.netlify.app/callback",
+		// redirect_uri: "http://localhost:8888/callback",
 		state: "vdjldfglfdlgrpoiaer9garlogihlgkzhdrlgishlro8tubzpdortuzorihglzdoighlzoirhtlzo8ghldhglzdghlzdoigh"
 	});
 

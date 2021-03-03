@@ -21,7 +21,7 @@ function Category() {
     })
     .then(response => setContent(response.data));
   }, [token, setContent]);
-  console.log(content);
+
 
  return (
    <>
