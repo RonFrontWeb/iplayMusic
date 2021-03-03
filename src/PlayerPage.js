@@ -18,7 +18,6 @@ function PlayerPage(props) {
      })
      .then(response => setContent(response.data));
    }, [token, setContent,props.id]);
-   console.log(content);
 
 
  return (

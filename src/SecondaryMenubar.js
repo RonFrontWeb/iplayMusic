@@ -2,7 +2,6 @@ import { Link } from '@reach/router';
 import './SecondaryMenubar.css';
 
 function SecondaryMenubar(props) {
-  console.log(props.background)
   var classstring ="";
   if (props.background === true ) {
     classstring = "backgroundWhite";
