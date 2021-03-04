@@ -19,7 +19,7 @@ function PlayListPage({children,albumImage,albumName}) {
    }, [token, setContent]);
    
 
-   var primaryAlbumImage = content.items && content.items[0].images[1].url;
+   var primaryAlbumImage = content.items && content.items[0].images[0].url;
 
    if (albumImage) {
      primaryAlbumImage = albumImage;
