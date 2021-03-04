@@ -15,8 +15,6 @@ import Callback from './pages/Callback';
 function App() {
 
   var tokenState = useState(null);
-
-
   return (
     <TokenContext.Provider value={tokenState}>
       <Router>
