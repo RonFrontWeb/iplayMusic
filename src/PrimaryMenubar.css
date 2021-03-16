@@ -7,8 +7,13 @@
     width: 100%;
     padding: 10px 20px;
     box-sizing: border-box;
-    background-color: var(--white);
+    background-color: var(--menubar);
     box-shadow: 0px 1px 25px 10px rgba(0, 0, 0, 0.201);
+}
+
+.PrimaryMenubar__button {
+    border: none;
+    background-color: transparent;
 }
 
 .PrimaryMenuBar__gradient {

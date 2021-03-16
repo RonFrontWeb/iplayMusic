@@ -1,0 +1,35 @@
+.login__container {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+.login__form {
+   width: 100%;
+}
+.login__label {
+   color:var(--loginDark) ;
+   font-weight: 700;
+}
+.login__input {
+   background-color: transparent;
+   padding-top: 20px;
+   padding-bottom: 15px;
+   margin-bottom: 15px;
+   border: none;
+	border-bottom:2px solid var(--loginDark) ;
+}
+.login__input::placeholder {
+   color:var(--loginDark);
+ } 
+
+.login__image {
+   position: absolute;
+   height: 20px;
+   right: 0;
+   bottom: 0;
+   padding-bottom: 15px;
+   margin-bottom: 15px;
+   filter: var(--loginIconDark);
+   
+}

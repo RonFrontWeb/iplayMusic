@@ -1,5 +1,7 @@
 import querystring from "querystring";
+import LoginForm from "../LoginForm";
 import RoundButtonIcon from "../RoundButtonIcon";
+import "./Login.css"
 
 export default function Login() {
 	var queryParameters = querystring.stringify({
@@ -12,11 +14,17 @@ export default function Login() {
 
 
 	return (
-		<>
-			
-			<h1>Login</h1>
-			<a href={`https://accounts.spotify.com/authorize?${queryParameters}`}>Log in with Spotify</a>
-			<RoundButtonIcon/>
-		</>
+		<div className="login">
+			<h1 className="login__title">Log In</h1>
+			<div style={{width:"100%",marginBottom:"50px"}}>
+				<LoginForm className="">
+					<LoginForm.field title="Username" type="text" placeholder="Enter your username" icon="contact"/>
+					<LoginForm.field title="Password" type="password" placeholder="Enter your password" icon="key"/>
+				</LoginForm>
+				<a className="login__button" href={`https://accounts.spotify.com/authorize?${queryParameters}`}>Log in</a>
+				<RoundButtonIcon/>
+				<p className="login__underline">One-Touch Login</p>
+			</div>
+		</div>
 	)
 }

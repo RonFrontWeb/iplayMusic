@@ -4,8 +4,11 @@
     --gradientFrom: #EE0979;
     --gradientTo: #FF6A00;
     --white: #FFFFFF;
-    --black: #000000;
+    --black: #d4cdcd;
     --darkPurple: #341931;
+
+    /* category variable*/
+
     --pink: #FF1168;
     --pinkAlt: #D70060;
     --pinkOpa: #ff11688e;
@@ -17,4 +20,17 @@
     --turquoise-blue: #0ABEBE;
     --lightblue: #00A1CB;
     --blue: #115793;
+    
+    /* darkmode variable*/
+    
+    --menubar: var(--white);
+    --loginPage: #FFFFFF;
+    --loginDark:#341931;
+    --touchDark:#FF1168;
+    --loginIconDark:invert(0%)
+    
+
+
+    /* unused variable*/
+    /* --darkblue: #111625; */
 }

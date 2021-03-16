@@ -7,7 +7,7 @@
 }
 
 .RoundButtonIcon {
-    background-color: var(--pink);
+    background-color:var(--touchDark);
     height: 80px;
     width: 80px;
     display: flex;
