@@ -18,8 +18,8 @@ export default function Login() {
 			<h1 className="login__title">Log In</h1>
 			<div style={{width:"100%",marginBottom:"50px"}}>
 				<LoginForm className="">
-					<LoginForm.field title="Username" type="text" placeholder="Enter your username" icon="contact"/>
-					<LoginForm.field title="Password" type="password" placeholder="Enter your password" icon="key"/>
+					<LoginForm.Field title="Username" type="text" placeholder="Enter your username" icon="contact"/>
+					<LoginForm.Field title="Password" type="password" placeholder="Enter your password" icon="key"/>
 				</LoginForm>
 				<a className="login__button" href={`https://accounts.spotify.com/authorize?${queryParameters}`}>Log in</a>
 				<RoundButtonIcon/>

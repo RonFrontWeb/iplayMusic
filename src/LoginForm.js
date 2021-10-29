@@ -1,4 +1,3 @@
-import { Children } from 'react';
 import './LoginForm.css';
 
 function LoginForm({children}) {
@@ -22,7 +21,7 @@ function LoginField({title,type,placeholder,icon}) {
 }
 
 
-LoginForm.field=LoginField;
+LoginForm.Field=LoginField;
 
 export default LoginForm;
 
