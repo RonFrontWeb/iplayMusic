@@ -10,11 +10,11 @@ exports.handler = async function(event, context) {
 		method: "post",
 		params: {
 			code: body.code,
-			redirect_uri: process.env.REDIRECT_URI,
+			redirect_uri: process.env.REACT_APP_REDIRECT_URI,
 			grant_type: "authorization_code"
 		},
 		headers: {
-			"Authorization": "Basic " + (Buffer.from(process.env.CLIENT_ID + ":" + process.env.CLIENT_SECRET).toString("base64"))
+			"Authorization": "Basic " + (Buffer.from(process.env.REACT_APP_CLIENT_ID + ":" + process.env.REACT_APP_CLIENT_SECRET).toString("base64"))
 		},
 		json: true
 	}
@@ -22,6 +22,8 @@ exports.handler = async function(event, context) {
 	try {
 		var response = await axios(authOptions);
 		
+		console.log(response)
+
 		return {
 			statusCode: 201,
 			body: JSON.stringify(response.data)

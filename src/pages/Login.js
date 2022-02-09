@@ -8,10 +8,11 @@ export default function Login() {
 		response_type: "code",
 		client_id: "adf9aca1dc9a4e9fa4ed22ebcff99768",
 		scope: "user-read-private user-read-email",
-		redirect_uri:window.location.href.includes("iplaymusic")? process.env.REDIRECT_URI :"http://localhost:8888/callback",
+		redirect_uri: process.env.REACT_APP_REDIRECT_URI,
+		// redirect_uri:window.location.href.includes("iplaymusic")? process.env.REDIRECT_URI :"http://localhost:8888/callback",
 		state: "vdjldfglfdlgrpoiaer9garlogihlgkzhdrlgishlro8tubzpdortuzorihglzdoighlzoirhtlzo8ghldhglzdghlzdoigh"
 	});
-
+	console.log(queryParameters)
 
 	return (
 		<div className="login">
